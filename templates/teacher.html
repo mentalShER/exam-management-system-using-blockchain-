@@ -92,6 +92,7 @@ $(document).ready(function(){
               {% if not arequest.private_key %}
               <br>
               <form method="POST" enctype="multipart/form-data">{% csrf_token %}
+                <input type="hidden" name="b_id" value="{{arequest.id}}">
                 <div class="custom-file mb-3">
                   <input type="file" class="custom-file-input" id="customFile" name="paper" accept="application/pdf" required>
                   <label class="custom-file-label" for="customFile">Choose file</label>

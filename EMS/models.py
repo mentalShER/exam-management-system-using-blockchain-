@@ -1,8 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 import datetime
-from django.contrib.postgres.fields import ArrayField
-
 def teacherID():
 	t_id = 'TEA-1'
 	try:
@@ -72,7 +70,7 @@ class Request(models.Model):
 	q_pattern = models.FileField(default=None)
 	deadline = models.DateField(default=datetime.date.today)
 	status = models.CharField(max_length=10,default='Pending')
-	enc_field = ArrayField(models.BinaryField(max_length=500,default=None),default=list)
+	enc_field = models.TextField(default="[]")
 	private_key = models.FileField(default=None)
 
 	def __str__(self):

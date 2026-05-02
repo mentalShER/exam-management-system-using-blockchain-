@@ -15,7 +15,7 @@
 
 {% if messages %}
   {% for message in messages %}
-        <div class="alert alert-success alert-dismissible fade show" style="text-align: center;border-radius: 0;"><button type="button" class="close" data-dismiss="alert">&times;</button>{{message}}</div>
+        <div class="alert alert-success alert-dismissible fade show" style="text-align: center;border-radius: 0;"><button type="button" class="close" data-dismiss="alert" onclick="this.blur()">&times;</button>{{message}}</div>
   {% endfor %}
 {% endif %}
 
@@ -154,7 +154,7 @@
 
         <div class="modal-header">
           <h4 class="modal-title" style="color: #49688e;">Select one paper</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <button type="button" class="close" data-dismiss="modal" onclick="this.blur()">&times;</button>
         </div>
         <!-- Modal body -->
         <form method="POST">{% csrf_token %}
@@ -166,7 +166,7 @@
         
         <!-- Modal footer -->
         <div class="modal-footer">
-          <button type="submit" class="btn btn-success" id="finalized">Finalize Paper</button>
+          <button type="submit" class="btn btn-success" id="finalized" disabled>Finalize Paper</button>
         </div>
         </form>
       </div>

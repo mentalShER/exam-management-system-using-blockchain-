@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*$py.class
+env/
+env_new/
+venv/
+db.sqlite3
+media/
+static/encrypted_files/
+*.pem
+.env
