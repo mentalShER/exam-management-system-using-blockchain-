@@ -77,3 +77,9 @@ Follow these steps to get the project running on your local machine:
    python manage.py runserver
    ```
 6. **Access the application:** Open your browser and go to `http://127.0.0.1:8000/`.
+
+---
+
+## 🤝 Contributors
+
+- **Sneha** ([@snehahaaha](https://github.com/snehahaaha)) - sneha.17253@sakec.ac.in
